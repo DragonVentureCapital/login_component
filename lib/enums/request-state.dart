@@ -1,0 +1,1 @@
+enum RequestState { LOADING, FAIL, SUCCESS, IDLE }

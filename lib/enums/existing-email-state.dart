@@ -1,0 +1,1 @@
+enum ExistingEmailState { CONFIRMED, NOT_CONFIRMED, LOADING, IDLE}
