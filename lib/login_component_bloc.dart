@@ -4,10 +4,13 @@ import 'package:rxdart/rxdart.dart';
 import 'auth/auth_repository.dart';
 import 'base_classes/custom_bloc_base.dart';
 
-class LoginBloc extends CustomBlocBase {
+class LoginComponentBloc extends CustomBlocBase {
 
   AuthRepository repo;
 
+  LoginComponentBloc(){
+    repo = AuthRepository("");
+  }
   final emailPageVisibilityController = BehaviorSubject<bool>();
 
   Stream<bool> get outEmailPage =>
@@ -31,6 +34,7 @@ class LoginBloc extends CustomBlocBase {
       await repo.login(data);
     } catch (e) {
       errorMessage = e;
+      print("deu xabu");
       throw(errorMessage);
     }
   }

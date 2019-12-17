@@ -30,6 +30,7 @@ class CustomTextFieldRegister extends StatelessWidget {
         onChanged: onChanged,
         obscureText: obscureText,
         keyboardType: keyboardType,
+        controller: controller,
         decoration: InputDecoration(
           labelText: label,
           hintText: hint,

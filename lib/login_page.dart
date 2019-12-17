@@ -1,10 +1,9 @@
 import 'package:login_component/login_component.dart';
 import 'package:flutter/material.dart';
-import 'package:login_component/resources/text_styles.dart';
+import 'package:login_component/login_component_module.dart';
 import 'package:login_component/widgets/card_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'base_classes/custom_base_page.dart';
-import 'login_bloc.dart';
 import 'resources/colors.dart';
 
 
@@ -20,7 +19,6 @@ class LoginPage extends CustomBasePage {
 }
 
 class _LoginPageState extends BaseState<LoginPage> with BasicPage, TickerProviderStateMixin {
-  final _loginBloc = LoginBloc();
 
   Animation<Offset> animation;
   AnimationController animationController;
@@ -62,7 +60,6 @@ class _LoginPageState extends BaseState<LoginPage> with BasicPage, TickerProvide
     SharedPreferences.getInstance().then((prefs) {
       print(prefs.getString("token"));
     });
-    _loginBloc.outState.listen((state) {});
   }
 
   _loginView() {
@@ -70,7 +67,7 @@ class _LoginPageState extends BaseState<LoginPage> with BasicPage, TickerProvide
       opacity: opacityForCard == true ? 1 : 0,
       curve: Curves.ease,
       duration: Duration(milliseconds: 400),
-     child: _cardModule(LoginView(widget.color)) ,
+     child: _cardModule(LoginViewModule(widget.color, "")) ,
     );
   }
 
@@ -109,7 +106,7 @@ class _LoginPageState extends BaseState<LoginPage> with BasicPage, TickerProvide
   _containerLabelsModule() {
     return Padding(
       padding: EdgeInsets.only(right:size.height * 0.05, left:size.height * 0.05,
-          top: size.height * 0.30, bottom:  size.height * 0.03),
+          top: size.height * 0.05, bottom:  size.height * 0.03),
       child: Text(
         widget.title,
         style: TextStyle(

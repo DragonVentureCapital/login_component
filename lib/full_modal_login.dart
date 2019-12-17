@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:login_component/login_component.dart';
+import 'package:login_component/login_component_bloc.dart';
+import 'package:login_component/login_component_module.dart';
 
 import 'base_classes/custom_base_page.dart';
-import 'login_bloc.dart';
-import 'resources/text_styles.dart';
 
 class FullModalLoginPage extends CustomBasePage {
   final title;
@@ -16,7 +16,7 @@ class FullModalLoginPage extends CustomBasePage {
 
 class _FullModalLoginPageState extends BaseState<FullModalLoginPage>
     with BasicPage {
-  final _loginBloc = LoginBloc();
+  final _loginBloc = LoginViewModule.to.getBloc<LoginComponentBloc>();
 
   @override
   Widget build(BuildContext context) {

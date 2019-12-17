@@ -1,6 +1,9 @@
 import 'package:login_component/base_classes/custom_bloc_base.dart';
-import 'package:login_component/email_card/email_validator.dart';
+import 'package:login_component/login_component_bloc.dart';
 import 'package:rxdart/rxdart.dart';
+
+import 'email_validator.dart';
+import 'login_component_module.dart';
 
 class PasswordCardBloc extends CustomBlocBase with EmailValidator {
   final passwordController = BehaviorSubject<String>();
@@ -12,9 +15,9 @@ class PasswordCardBloc extends CustomBlocBase with EmailValidator {
 
 
   login() async {
-//    final loginBloc = AppModule.to.getBloc<LoginBloc>();
-//    loginBloc.password = passwordController.stream.value;
-//    loginBloc.login(loginBloc.email, loginBloc.password);
+    final loginBloc = LoginViewModule.to.getBloc<LoginComponentBloc>();
+    loginBloc.password = passwordController.stream.value;
+    loginBloc.login(loginBloc.email, loginBloc.password);
   }
 
   @override

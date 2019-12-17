@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:login_component/base_classes/custom_base_page.dart';
 import 'package:login_component/helpers/decorations-helper.dart';
+import 'package:login_component/login_component_module.dart';
 import 'package:login_component/resources/colors.dart';
 import 'package:login_component/widgets/custom_textfield_register.dart';
 
-import '../custom_button_widget.dart';
+import 'custom_button_widget.dart';
 import 'email_card_bloc.dart';
 
 class EmailCardPage extends CustomBasePage {
@@ -20,7 +21,7 @@ class EmailCardPage extends CustomBasePage {
 class _EmailCardPageState extends BaseState<EmailCardPage> with BasicPage {
   @override
   Size _size;
-  final _emailBloc = EmailCardBloc();
+  final _emailBloc = LoginViewModule.to.getBloc<EmailCardBloc>();
 
   Widget build(BuildContext context) {
     _size = MediaQuery.of(context).size;
@@ -58,6 +59,7 @@ class _EmailCardPageState extends BaseState<EmailCardPage> with BasicPage {
     return Padding(
       padding: const EdgeInsets.only(left: 20, right: 20),
       child: CustomTextFieldRegister(
+        controller: _emailBloc.outEmailController,
         onChanged: _emailBloc.changeEmail,
         label: "E-mail",
         hint: "E-mail",

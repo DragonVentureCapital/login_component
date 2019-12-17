@@ -1,14 +1,13 @@
 import 'package:dio/dio.dart';
 
-import '../flavor_values.dart';
 import '../helpers/storage_helper.dart';
 
 class AuthRepository {
   Dio _client;
 
-  AuthRepository() {
+  AuthRepository(baseUrl) {
     _client = Dio();
-    _client.options.baseUrl = FlavorConfig.instance.values.baseUrl;
+    _client.options.baseUrl = baseUrl;
     _client.options.headers.addAll({"Content-Type": "application/json"});
   }
 

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:login_component/helpers/decorations-helper.dart';
-import 'package:login_component/password/password_card_bloc.dart';
+import 'package:login_component/login_component_module.dart';
+import 'package:login_component/password_card_bloc.dart';
 import 'package:login_component/widgets/custom_textfield_register.dart';
 
-import '../custom_button_widget.dart';
+import 'custom_button_widget.dart';
 
 class PasswordCardPage extends StatefulWidget {
   final VoidCallback onPressed;
@@ -16,8 +17,7 @@ class PasswordCardPage extends StatefulWidget {
 
 class _PasswordCardPageState extends State<PasswordCardPage> {
   @override
-  var _passwordBloc =
-  PasswordCardBloc();
+  var _passwordBloc = LoginViewModule.to.getBloc<PasswordCardBloc>();
 
   Widget build(BuildContext context) {
     return Column(

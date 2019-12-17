@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:login_component/login_component.dart';
+import 'package:login_component/login_component_bloc.dart';
 
 import 'base_classes/custom_base_page.dart';
-import 'login_bloc.dart';
+import 'login_component_module.dart';
 
 class ModalLoginPage extends CustomBasePage {
   final title;
@@ -14,7 +15,7 @@ class ModalLoginPage extends CustomBasePage {
 }
 
 class _ModalLoginPageState extends BaseState<ModalLoginPage> with BasicPage {
-  final _loginBloc = LoginBloc();
+  final _loginBloc = LoginViewModule.to.getBloc<LoginComponentBloc>();
 
   Widget build(BuildContext context) {
     size = MediaQuery.of(context).size;

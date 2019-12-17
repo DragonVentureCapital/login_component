@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:login_component/password/password_card_page.dart';
+import 'package:login_component/email_card_bloc.dart';
+import 'package:login_component/email_card_module.dart';
+import 'package:login_component/password_card_module.dart';
+import 'package:login_component/password_card_page.dart';
 
 import 'base_classes/custom_base_page.dart';
-import 'email_card/email_card_page.dart';
+import 'email_card_page.dart';
 
 class LoginView extends CustomBasePage {
   @override
@@ -42,8 +45,9 @@ class _LoginViewState extends BaseState<LoginView>
       children: <Widget>[
         Visibility(
           visible: !showPassword,
-          child: EmailCardPage(() {
+          child: EmailCardModule(() {
             setState(() {
+              EmailCardBloc().onPressed();
               showPassword = true;
             });
             _controller.forward();
@@ -55,7 +59,7 @@ class _LoginViewState extends BaseState<LoginView>
               position: _animationContainer,
               child: Visibility(
                 visible: showPassword,
-                child: PasswordCardPage((){},widget.color),
+                child: PasswordCardModule((){},widget.color),
               ),
             )),
       ],
