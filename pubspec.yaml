@@ -18,20 +18,11 @@ dependencies:
   url_launcher: ^5.2.3
   bloc: ^0.15.0
   bloc_pattern: ^2.3.2
-  flutter_screenutil: ^0.6.0
   dio: ^2.1.13
   rxdart: ^0.22.2
   shared_preferences: ^0.5.3+4
   http: ^0.12.0+2
   flutter_masked_text: ^0.8.0
-  intl: ^0.15.7
-  webview_flutter: ^0.3.14+1
-  firebase_dynamic_links: ^0.5.0+1
-  google_maps_flutter: ^0.5.21+12
-  share:
-  pull_to_refresh:
-  table_calendar: ^2.1.0
-  auto_size_text:
   expandable: ^3.0.1
   flutter:
     sdk: flutter

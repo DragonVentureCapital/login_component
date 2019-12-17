@@ -3,10 +3,12 @@ import 'package:login_component/login_component.dart';
 
 import 'base_classes/custom_base_page.dart';
 import 'login_bloc.dart';
-import 'resources/colors.dart';
-import 'resources/text_styles.dart';
 
 class ModalLoginPage extends CustomBasePage {
+  final title;
+  final Color color;
+
+  ModalLoginPage(this.title, this.color);
   @override
   _ModalLoginPageState createState() => _ModalLoginPageState();
 }
@@ -55,7 +57,7 @@ class _ModalLoginPageState extends BaseState<ModalLoginPage> with BasicPage {
         stream: _loginBloc.outEmailPage,
         builder: (context, snapshot) {
           return Column(
-            children: <Widget>[LoginView()],
+            children: <Widget>[LoginView(widget.color)],
           );
         });
   }
@@ -68,8 +70,13 @@ class _ModalLoginPageState extends BaseState<ModalLoginPage> with BasicPage {
             bottom: size.height * 0.03,
             top: size.height * 0.04),
         child: Text(
-          "Faça login ou crie uma conta para ver suas reservas",
-          style: Styles.superTitleBaseColor,
+          widget.title,
+          style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.normal,
+            color: widget.color,
+          ),
           textAlign: TextAlign.center,
         ));
   }
@@ -86,7 +93,7 @@ class _ModalLoginPageState extends BaseState<ModalLoginPage> with BasicPage {
           child: Text(
             "Cancelar",
             style: TextStyle(
-              color: COLOR_BASE,
+              color: widget.color,
               fontWeight: FontWeight.bold,
               fontSize: 16,
             ),

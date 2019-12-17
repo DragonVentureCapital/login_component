@@ -7,8 +7,8 @@ import 'resources/text_styles.dart';
 
 class FullModalLoginPage extends CustomBasePage {
   final title;
-
-  FullModalLoginPage({this.title});
+  final Color color;
+  FullModalLoginPage(this.title, this.color);
 
   @override
   _FullModalLoginPageState createState() => _FullModalLoginPageState();
@@ -36,7 +36,7 @@ class _FullModalLoginPageState extends BaseState<FullModalLoginPage>
           return Column(
             children: <Widget>[
               _containerLabelsModule(),
-              LoginView()
+              LoginView(widget.color)
             ],
           );
         });
@@ -47,8 +47,13 @@ class _FullModalLoginPageState extends BaseState<FullModalLoginPage>
       padding: EdgeInsets.only(right:size.height * 0.05, left:size.height * 0.05,
           top: size.height * 0.30, bottom:  size.height * 0.03),
       child: Text(
-        "Faça login ou crie uma conta para ver suas reservas",
-        style: Styles.superTitleBaseColor,
+        widget.title,
+        style: TextStyle(
+          fontSize: 22,
+          fontWeight: FontWeight.bold,
+          fontStyle: FontStyle.normal,
+          color: widget.color,
+        ),
         textAlign: TextAlign.center,
       ),
     );

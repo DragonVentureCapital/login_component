@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:login_component/helpers/decorations-helper.dart';
 import 'package:login_component/password/password_card_bloc.dart';
-import 'package:login_component/resources/colors.dart';
 import 'package:login_component/widgets/custom_textfield_register.dart';
 
 import '../custom_button_widget.dart';
 
 class PasswordCardPage extends StatefulWidget {
   final VoidCallback onPressed;
-
-  PasswordCardPage({this.onPressed});
+  final Color color;
+  PasswordCardPage(this.onPressed, this.color);
 
   @override
   _PasswordCardPageState createState() => _PasswordCardPageState();
@@ -64,7 +63,7 @@ class _PasswordCardPageState extends State<PasswordCardPage> {
       padding: const EdgeInsets.only(right: 20),
       child: InkWell(
           child: Text('Esqueceu a senha?',
-              style: setTextStyle(FontWeight.bold, 12, COLOR_BASE)),
+              style: setTextStyle(FontWeight.bold, 12, widget.color)),
           onTap: () {}),
     );
   }
@@ -74,7 +73,8 @@ class _PasswordCardPageState extends State<PasswordCardPage> {
       padding:
           EdgeInsets.only(bottom: MediaQuery.of(context).size.height * 0.02),
       child: CustomButtonWidget(
-        color: COLOR_BASE,
+        color: widget.color,
+        disabledColor: widget.color.withAlpha(900),
         height: 50,
         width: MediaQuery.of(context).size.width,
         onPressed: snapshot.hasData && snapshot.data == true

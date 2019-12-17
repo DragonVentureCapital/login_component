@@ -7,6 +7,8 @@ import 'email_card/email_card_page.dart';
 
 class LoginView extends CustomBasePage {
   @override
+  final Color color;
+  LoginView(this.color);
   _LoginViewState createState() => _LoginViewState();
 }
 
@@ -45,7 +47,7 @@ class _LoginViewState extends BaseState<LoginView>
               showPassword = true;
             });
             _controller.forward();
-          }),
+          }, widget.color),
         ),
         Align(
             alignment: AlignmentDirectional(0, 0.7),
@@ -53,7 +55,7 @@ class _LoginViewState extends BaseState<LoginView>
               position: _animationContainer,
               child: Visibility(
                 visible: showPassword,
-                child: PasswordCardPage(),
+                child: PasswordCardPage((){},widget.color),
               ),
             )),
       ],

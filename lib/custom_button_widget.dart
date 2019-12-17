@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:login_component/resources/colors.dart';
 
 class CustomButtonWidget extends StatelessWidget {
   final Color color;
   final Color borderColor;
+  final Color disabledColor;
   final double height;
   final double width;
   final String title;
@@ -13,6 +13,7 @@ class CustomButtonWidget extends StatelessWidget {
 
   CustomButtonWidget(
       {this.color,
+      this.disabledColor,
       this.height,
       this.borderColor = Colors.transparent,
       this.width,
@@ -35,7 +36,7 @@ class CustomButtonWidget extends StatelessWidget {
           elevation: 0,
           onPressed: onPressed,
           child: Text(title, style: textStyle),
-          disabledColor: COLOR_BASE.withAlpha(900),
+          disabledColor: disabledColor,
         ));
   }
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import 'auth/auth_repository.dart';
 import 'base_classes/custom_bloc_base.dart';

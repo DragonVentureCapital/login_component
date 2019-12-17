@@ -1,16 +1,21 @@
 import 'package:login_component/login_component.dart';
 import 'package:flutter/material.dart';
+import 'package:login_component/resources/text_styles.dart';
 import 'package:login_component/widgets/card_widget.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import 'base_classes/custom_base_page.dart';
-import 'container_labels.dart';
 import 'login_bloc.dart';
 import 'resources/colors.dart';
 
 
 class LoginPage extends CustomBasePage {
   @override
+  final Image imageLogin;
+  final Color color;
+  final title;
+
+  LoginPage(this.imageLogin, this.title, this.color);
+
   _LoginPageState createState() => _LoginPageState();
 }
 
@@ -48,7 +53,7 @@ class _LoginPageState extends BaseState<LoginPage> with BasicPage, TickerProvide
   Widget build(BuildContext context) {
     size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: COLOR_BASE,
+      backgroundColor: widget.color,
       body: SingleChildScrollView(child: _pageViewModule()),
     );
   }
@@ -65,7 +70,7 @@ class _LoginPageState extends BaseState<LoginPage> with BasicPage, TickerProvide
       opacity: opacityForCard == true ? 1 : 0,
       curve: Curves.ease,
       duration: Duration(milliseconds: 400),
-     child: _cardModule(LoginView()) ,
+     child: _cardModule(LoginView(widget.color)) ,
     );
   }
 
@@ -89,12 +94,11 @@ class _LoginPageState extends BaseState<LoginPage> with BasicPage, TickerProvide
                 alignment: AlignmentDirectional(0, 0.7),
                 child: SlideTransition(
                   position: animation,
-                  child: Image.asset('assets/andy_logo.png',
-                      alignment: Alignment.center, height: size.height * 0.24),
+                  child: widget.imageLogin,
                 ),
               ),
               SizedBox(
-                height: size.height * 0.02,
+                height: size.height * 0.07,
               ),
               _loginView()
             ],
@@ -104,10 +108,17 @@ class _LoginPageState extends BaseState<LoginPage> with BasicPage, TickerProvide
 
   _containerLabelsModule() {
     return Padding(
-      padding: EdgeInsets.only(top: size.height * 0.03),
-      child: ContainerLabels(
-        title: "Aproveite seu tempo",
-        subTitle: "Aproveite a experiencia",
+      padding: EdgeInsets.only(right:size.height * 0.05, left:size.height * 0.05,
+          top: size.height * 0.30, bottom:  size.height * 0.03),
+      child: Text(
+        widget.title,
+        style: TextStyle(
+          fontSize: 22,
+          fontWeight: FontWeight.bold,
+          fontStyle: FontStyle.normal,
+          color: widget.color,
+        ),
+        textAlign: TextAlign.center,
       ),
     );
   }

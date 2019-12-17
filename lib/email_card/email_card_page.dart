@@ -10,8 +10,8 @@ import 'email_card_bloc.dart';
 
 class EmailCardPage extends CustomBasePage {
   final VoidCallback onPressed;
-
-  EmailCardPage(this.onPressed);
+  final Color color;
+  EmailCardPage(this.onPressed, this.color);
 
   @override
   _EmailCardPageState createState() => _EmailCardPageState();
@@ -77,7 +77,8 @@ class _EmailCardPageState extends BaseState<EmailCardPage> with BasicPage {
 
   _enterEmailButton(snapshot) {
     return CustomButtonWidget(
-      color: COLOR_BASE,
+      color: widget.color,
+      disabledColor:  widget.color.withAlpha(900),
       height: 50,
       width: _size.width,
       onPressed:
@@ -90,13 +91,13 @@ class _EmailCardPageState extends BaseState<EmailCardPage> with BasicPage {
   _registerButton() {
     return CustomButtonWidget(
       color: COLOR_CUSTOM_WHITE,
-      borderColor: COLOR_BASE,
+      borderColor: widget.color,
       height: 50,
       width: _size.width,
       onPressed: () {
        //DEVOLVER A ACTION DO BOTAO
       },
-      textStyle: setTextStyle(FontWeight.bold, 18, COLOR_BASE),
+      textStyle: setTextStyle(FontWeight.bold, 18, widget.color),
       title: "Criar conta",
     );
   }

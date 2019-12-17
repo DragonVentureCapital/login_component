@@ -4,6 +4,10 @@ import 'colors.dart';
 
 abstract class Styles {
 
+  final Color color;
+
+  Styles(this.color);
+
   static const superTitle = TextStyle(
     fontSize: 22,
     fontWeight: FontWeight.bold,
@@ -16,19 +20,6 @@ abstract class Styles {
     fontWeight: FontWeight.bold,
     fontStyle: FontStyle.normal,
     color: COLOR_CUSTOM_WHITE,
-  );
-
-  static const superTitleBaseColor = TextStyle(
-    fontSize: 22,
-    fontWeight: FontWeight.bold,
-    fontStyle: FontStyle.normal,
-    color: COLOR_BASE,
-  );
-
-  static const superTitleBaseColorNormal = TextStyle(
-    fontSize: 22,
-    fontStyle: FontStyle.normal,
-    color: COLOR_BASE,
   );
 
   static const text = TextStyle(
@@ -47,19 +38,6 @@ abstract class Styles {
     fontSize: 16,
     fontStyle: FontStyle.normal,
     color: COLOR_CUSTOM_BLACK,
-    fontWeight: FontWeight.bold,
-  );
-
-  static const textBaseColor = TextStyle(
-    fontSize: 16,
-    fontStyle: FontStyle.normal,
-    color: COLOR_BASE,
-  );
-
-  static const textBaseColorBold = TextStyle(
-    fontSize: 16,
-    fontStyle: FontStyle.normal,
-    color: COLOR_BASE,
     fontWeight: FontWeight.bold,
   );
 
@@ -83,10 +61,4 @@ abstract class Styles {
     color: Colors.red,
   );
 
-  static const link = TextStyle(
-    fontStyle: FontStyle.normal,
-    fontWeight: FontWeight.bold,
-    fontSize: 16,
-    color: COLOR_BASE,
-  );
 }
