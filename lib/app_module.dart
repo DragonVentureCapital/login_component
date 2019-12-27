@@ -5,7 +5,6 @@ import 'package:login_component/shared/auth/auth_repository.dart';
 import 'package:login_component/shared/custom_dio/custom_dio.dart';
 
 import 'app_bloc.dart';
-import 'app_widget.dart';
 import 'login/pages/login_page/login_page_bloc.dart';
 import 'login/pages/login_view_bloc.dart';
 
@@ -18,6 +17,8 @@ class AppModule extends ModuleWidget {
   List<Bloc> get blocs => [
     Bloc((i) => AppBloc()),
     Bloc((i) => AuthBloc()),
+    Bloc((i) => LoginViewBloc()),
+    Bloc((i) => LoginPageBloc()),
   ];
 
   @override
@@ -27,7 +28,7 @@ class AppModule extends ModuleWidget {
   ];
 
   @override
-  Widget get view => AppWidget(this.skipSteps);
+  Widget get view => Container();
 
   static Inject get to => Inject<AppModule>.of();
 }

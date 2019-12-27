@@ -6,6 +6,7 @@ import 'modal_login_bloc.dart';
 class ModalLoginModule extends ModuleWidget {
   final color;
   final baseUrl;
+  VoidCallback function;
 
   ModalLoginModule(this.color, this.baseUrl);
   @override
@@ -18,7 +19,7 @@ class ModalLoginModule extends ModuleWidget {
   ];
 
   @override
-  Widget get view => ModalLoginPage(this.color, this.baseUrl);
+  Widget get view => ModalLoginPage(this.color, this.baseUrl, this.function);
 
   static Inject get to => Inject<ModalLoginModule>.of();
 }

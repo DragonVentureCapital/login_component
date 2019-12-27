@@ -13,7 +13,8 @@ import 'login_page_bloc.dart';
 class LoginPage extends CustomBasePage {
   final logo;
   final color;
-  LoginPage(this.logo, this.color);
+  VoidCallback function;
+  LoginPage(this.logo, this.color, this.function);
 
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -30,7 +31,7 @@ class _LoginPageState extends BaseState<LoginPage>
   void initState() {
     _loginBloc.outState.listen((state){
       if(state == RequestState.SUCCESS) {
-        //TODO: Trazer o retorno aqui
+        widget.function();
       }
     });
 

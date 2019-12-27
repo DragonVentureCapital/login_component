@@ -9,8 +9,8 @@ import 'login_page_bloc.dart';
 class LoginModule extends ModuleWidget {
   final color;
   final logo;
-
-  LoginModule(this.color, this.logo);
+  VoidCallback function;
+  LoginModule(this.color, this.logo, this.function);
 
   @override
   List<Bloc> get blocs => [
@@ -27,7 +27,7 @@ class LoginModule extends ModuleWidget {
   ];
 
   @override
-  Widget get view => LoginPage(color,logo);
+  Widget get view => LoginPage(color,logo,function);
 
   static Inject get to => Inject<LoginModule>.of();
 }

@@ -11,7 +11,9 @@ import 'modal_login_bloc.dart';
 class ModalLoginPage extends CustomBasePage {
   final color;
   final baseUrl;
-  ModalLoginPage(this.baseUrl, this.color);
+  VoidCallback function;
+
+  ModalLoginPage(this.baseUrl, this.color, this.function);
   @override
   _ModalLoginPageState createState() => _ModalLoginPageState();
 }
@@ -23,6 +25,7 @@ class _ModalLoginPageState extends BaseState<ModalLoginPage> with BasicPage {
   void initState() {
     _loginBloc.outState.listen((state){
       if(state == RequestState.SUCCESS) {
+        widget.function();
       }
     });
     super.initState();
