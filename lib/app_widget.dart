@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:login_component/login/pages/login_page/login_module.dart';
 import 'package:login_component/shared/constants/colors.dart';
 
 // ignore: must_be_immutable
@@ -29,8 +28,7 @@ class _AppWidgetState extends State<AppWidget> with WidgetsBindingObserver {
         fontFamily: "Nunito",
         primarySwatch: THEME_COLOR_PRIMARY,
       ),
-      home: LoginModule(),
-    );
+      home: Container());
   }
 }
 

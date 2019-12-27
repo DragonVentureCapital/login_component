@@ -7,6 +7,11 @@ import '../../../app_module.dart';
 import 'login_page.dart';
 import 'login_page_bloc.dart';
 class LoginModule extends ModuleWidget {
+  final color;
+  final logo;
+
+  LoginModule(this.color, this.logo);
+
   @override
   List<Bloc> get blocs => [
     Bloc((i) => LoginPageBloc()),
@@ -22,7 +27,7 @@ class LoginModule extends ModuleWidget {
   ];
 
   @override
-  Widget get view => LoginPage();
+  Widget get view => LoginPage(color,logo);
 
   static Inject get to => Inject<LoginModule>.of();
 }

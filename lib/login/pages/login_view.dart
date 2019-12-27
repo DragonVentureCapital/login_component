@@ -8,6 +8,10 @@ import 'login_view_bloc.dart';
 import 'login_view_module.dart';
 
 class LoginView extends CustomBasePage {
+  final color;
+
+  LoginView(this.color);
+
   @override
   _LoginViewState createState() => _LoginViewState();
 }
@@ -51,12 +55,13 @@ class _LoginViewState extends BaseState<LoginView>
                       position: _animationContainer,
                       child: Visibility(
                         visible: snapshot.data,
-                        child: PasswordCardModule(),
+                        child: PasswordCardModule(widget.color),
                       ),
                     ));
               } else {
                 return Visibility(
-                    visible: snapshot.hasData ? !snapshot.data : true, child: EmailCardModule());
+                    visible: snapshot.hasData ? !snapshot.data : true,
+                    child: EmailCardModule(widget.color));
               }
             }),
       ],

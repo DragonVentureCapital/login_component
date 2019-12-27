@@ -6,8 +6,10 @@ import '../login_view_module.dart';
 
 class FullModalLoginPage extends CustomBasePage {
   final title;
+  final color;
+  final baseUrl;
 
-  FullModalLoginPage({this.title});
+  FullModalLoginPage({this.title, this.color, this.baseUrl});
 
   @override
   _FullModalLoginPageState createState() => _FullModalLoginPageState();
@@ -30,7 +32,7 @@ class _FullModalLoginPageState extends BaseState<FullModalLoginPage>
     return Column(
       children: <Widget>[
         _containerLabelsModule(),
-        LoginViewModule(),
+        LoginViewModule(widget.color),
       ],
     );
   }

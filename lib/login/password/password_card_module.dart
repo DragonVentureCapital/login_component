@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:login_component/login/password/password_card_page.dart';
 
 class PasswordCardModule extends ModuleWidget {
+  final color;
+
+  PasswordCardModule(this.color);
   @override
   List<Bloc> get blocs => [];
 

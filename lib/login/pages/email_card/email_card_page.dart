@@ -11,8 +11,8 @@ import 'email_card_bloc.dart';
 
 class EmailCardPage extends CustomBasePage {
   final _emailBloc = LoginViewModule.to.getBloc<EmailCardBloc>();
-
-  EmailCardPage();
+  final color;
+  EmailCardPage(this.color);
 
   @override
   _EmailCardPageState createState() => _EmailCardPageState();
@@ -77,7 +77,7 @@ class _EmailCardPageState extends BaseState<EmailCardPage> with BasicPage {
 
   _enterEmailButton(snapshot) {
     return CustomButtonWidget(
-      color: COLOR_BASE,
+      color: widget.color,
       height: 50,
       width: size.width,
       onPressed: snapshot.hasData && snapshot.data == true ? widget._emailBloc.onPressed : null,
@@ -90,7 +90,7 @@ class _EmailCardPageState extends BaseState<EmailCardPage> with BasicPage {
   _registerButton() {
     return CustomButtonWidget(
       color: COLOR_CUSTOM_WHITE,
-      borderColor: COLOR_BASE,
+      borderColor: widget.color,
       height: 50,
       width: size.width,
       onPressed: () {

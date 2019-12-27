@@ -9,6 +9,9 @@ import '../login_view_module.dart';
 import 'modal_login_bloc.dart';
 
 class ModalLoginPage extends CustomBasePage {
+  final color;
+  final baseUrl;
+  ModalLoginPage(this.baseUrl, this.color);
   @override
   _ModalLoginPageState createState() => _ModalLoginPageState();
 }
@@ -63,7 +66,7 @@ class _ModalLoginPageState extends BaseState<ModalLoginPage> with BasicPage {
 
   _loginView() {
     return Column(
-      children: <Widget>[LoginViewModule()],
+      children: <Widget>[LoginViewModule(widget.color)],
     );
   }
 

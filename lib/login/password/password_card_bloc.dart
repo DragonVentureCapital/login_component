@@ -13,6 +13,7 @@ class PasswordCardBloc extends CustomBlocBase with EmailValidator {
   Function(String) get changePassword => passwordController.sink.add;
 
 
+  //TODO: Ver com o backend para termos uma rota unica para requests
   login() async {
     final _loginBloc = LoginViewModule.to.getBloc<LoginViewBloc>();
     _loginBloc.password = passwordController.stream.value;

@@ -3,7 +3,6 @@ import 'package:login_component/login/pages/login_view_bloc.dart';
 import 'package:login_component/login/password/password_card_bloc.dart';
 import 'package:login_component/login/widgets/custom_textfield_register.dart';
 import 'package:login_component/shared/base_classes/custom_base_page.dart';
-import 'package:login_component/shared/constants/colors.dart';
 import 'package:login_component/shared/constants/text_styles.dart';
 import 'package:login_component/shared/enums/request-state.dart';
 import 'package:login_component/shared/helpers/decorations-helper.dart';
@@ -15,8 +14,9 @@ class PasswordCardPage extends CustomBasePage {
   final VoidCallback onPressed;
   final _passwordBloc = LoginViewModule.to.getBloc<PasswordCardBloc>();
   final _loginViewBloc = LoginViewModule.to.getBloc<LoginViewBloc>();
+  final color;
 
-  PasswordCardPage({this.onPressed});
+  PasswordCardPage({this.onPressed, this.color});
 
   @override
   _PasswordCardPageState createState() => _PasswordCardPageState();
@@ -77,7 +77,7 @@ class _PasswordCardPageState extends BaseState<PasswordCardPage>
       padding: const EdgeInsets.only(right: 20),
       child: InkWell(
           child: Text('Esqueceu a senha?',
-              style: setTextStyle(FontWeight.bold, 12, COLOR_BASE)),
+              style: setTextStyle(FontWeight.bold, 12, widget.color)),
           onTap: () {}),
     );
   }
@@ -93,7 +93,7 @@ class _PasswordCardPageState extends BaseState<PasswordCardPage>
                 left: change(snapshot.data),
                 right: change(snapshot.data)),
             child: CustomButtonWidget(
-              color: COLOR_BASE,
+              color: widget.color,
               height: 50,
               loading: snapshot.data == RequestState.LOADING,
               width: MediaQuery.of(context).size.width,

@@ -6,6 +6,10 @@ import 'login_view.dart';
 import 'login_view_bloc.dart';
 
 class LoginViewModule extends ModuleWidget {
+  final color;
+
+  LoginViewModule(this.color);
+
   @override
   List<Bloc> get blocs => [
     Bloc(
@@ -23,7 +27,7 @@ class LoginViewModule extends ModuleWidget {
   List<Dependency> get dependencies => [];
 
   @override
-  Widget get view => LoginView();
+  Widget get view => LoginView(this.color);
 
   static Inject get to => Inject<LoginViewModule>.of();
 }

@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 import 'email_card_page.dart';
 
 class EmailCardModule extends ModuleWidget {
+  final color;
+
+  EmailCardModule(this.color);
+
   @override
   List<Bloc> get blocs => [];
 
@@ -11,7 +15,7 @@ class EmailCardModule extends ModuleWidget {
   List<Dependency> get dependencies => [];
 
   @override
-  Widget get view => EmailCardPage();
+  Widget get view => EmailCardPage(this.color);
 
   static Inject get to => Inject<EmailCardModule>.of();
 }

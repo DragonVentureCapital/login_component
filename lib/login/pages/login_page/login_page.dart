@@ -11,6 +11,10 @@ import 'login_page_bloc.dart';
 
 
 class LoginPage extends CustomBasePage {
+  final logo;
+  final color;
+  LoginPage(this.logo, this.color);
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
@@ -56,7 +60,7 @@ class _LoginPageState extends BaseState<LoginPage>
 
     size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: COLOR_BASE,
+      backgroundColor: widget.color,
       body: SingleChildScrollView(child: _pageViewModule()),
     );
   }
@@ -72,7 +76,7 @@ class _LoginPageState extends BaseState<LoginPage>
       opacity: opacityForCard == true ? 1 : 0,
       curve: Curves.ease,
       duration: Duration(milliseconds: 400),
-      child: _cardModule(LoginViewModule()),
+      child: _cardModule(LoginViewModule(widget.color)),
     );
   }
 
@@ -95,12 +99,11 @@ class _LoginPageState extends BaseState<LoginPage>
                 alignment: AlignmentDirectional(0, 0.7),
                 child: SlideTransition(
                   position: animation,
-                  child: Image.asset('assets/andy_logo.png',
-                      alignment: Alignment.center, height: size.height * 0.24),
+                  child: widget.logo,
                 ),
               ),
               SizedBox(
-                height: size.height * 0.02,
+                height: size.height * 0.05,
               ),
               _loginView()
             ],

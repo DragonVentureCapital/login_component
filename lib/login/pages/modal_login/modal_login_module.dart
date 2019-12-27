@@ -4,6 +4,10 @@ import 'modal_login.dart';
 import 'modal_login_bloc.dart';
 
 class ModalLoginModule extends ModuleWidget {
+  final color;
+  final baseUrl;
+
+  ModalLoginModule(this.color, this.baseUrl);
   @override
   List<Bloc> get blocs => [
     Bloc((i) => ModalLoginBloc())
@@ -14,7 +18,7 @@ class ModalLoginModule extends ModuleWidget {
   ];
 
   @override
-  Widget get view => ModalLoginPage();
+  Widget get view => ModalLoginPage(this.color, this.baseUrl);
 
   static Inject get to => Inject<ModalLoginModule>.of();
 }
