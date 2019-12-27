@@ -2,88 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc7e476f-bccf-4568-bae0-7ee63c004475" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/app_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app_module.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/app_widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/email_card/email_card_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/email_card/email_card_module.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/email_card/email_card_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/full_modal/full_modal_login.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/full_modal/full_modal_login_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/full_modal/full_modal_login_module.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/login_page/login_module.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/login_page/login_page_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/login_view.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/login_view_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/login_view_module.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/modal_login/modal_login_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/pages/modal_login/modal_login_module.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/password/password_card_module.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/login/password/password_card_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/login_services/login_services.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/animations/opacity_animation.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/auth/auth_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/auth/auth_repository.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/base_classes/custom_base_page.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/constants/constants.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/constants/sizes.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/custom_dio/custom_dio.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/custom_dio/interceptor_auth.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/custom_dio/interceptor_cache.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/custom_dio/interceptors_custom.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/custom_scroll_physics.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/flavors/flavor_values.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/helpers/display_results_helper.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/helpers/storage_helper.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/models/customer.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/models/customer.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/models/user.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/models/user.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/models/user_object.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/models/user_object.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/webview.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/widgets/container_labels.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/widgets/custom_textfield_widget.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/widgets/radio_button_custom/radio_button_custom_bloc.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/shared/widgets/radio_button_custom/radio_button_custom_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/auth/auth_bloc.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/auth/auth_repository.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base_classes/custom_base_page.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/base_classes/custom_bloc_base.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/base_classes/custom_bloc_base.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/custom_button_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/widgets/custom_button_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/email_card_bloc.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/email_card_module.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/email_card_page.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/email_validator.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/pages/email_card/email_validator.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/enums/existing-email-state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/enums/existing-email-state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/enums/request-state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/enums/request-state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/enums/sides.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/enums/sides.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/full_modal_login.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/helpers/datetime_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/helpers/datetime_helper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/helpers/decorations-helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/helpers/decorations-helper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/helpers/status_bar_helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/helpers/status_bar_helper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/helpers/storage_helper.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/helpers/utils/string_utils.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/helpers/utils/string_utils.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login_component.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login_component_bloc.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login_component_module.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login_page.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/pages/login_page/login_page.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/modal_login.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/pages/modal_login/modal_login.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/password_card_bloc.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/password/password_card_bloc.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/password_card_module.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/password_card_page.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/constants/colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/constants.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/sizes.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/resources/text_styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/constants/text_styles.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/card_widget.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/widgets/card_widget.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/widgets/custom_textfield_register.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/widgets/custom_textfield_register.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/app_module.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/app_module.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/shared/auth/auth_repository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/auth/auth_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/shared/custom_dio/interceptor_auth.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/shared/custom_dio/interceptor_auth.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/shared/flavors/flavor_values.dart" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,31 +20,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/shared/webview.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/app_module.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="359">
+              <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -130,69 +32,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/app_widget.dart">
+        <entry file="file://$PROJECT_DIR$/lib/app_bloc.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/shared/widgets/radio_button_custom/radio_button_custom_bloc.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="50" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/shared/widgets/radio_button_custom/radio_button_custom_widget.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="28" column="62" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/shared/widgets/container_labels.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="21" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/shared/widgets/custom_button_widget.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="51" column="35" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/shared/models/user_object.dart">
+        <entry file="file://$PROJECT_DIR$/lib/shared/auth/auth_repository.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="19" column="6" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="150">
+              <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
               <folding>
-                <element signature="e#0#54#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/shared/custom_dio/interceptor_auth.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -263,30 +129,31 @@
         <option value="$PROJECT_DIR$/lib/login/password/password_card_page.dart" />
         <option value="$PROJECT_DIR$/lib/login/widgets/custom_textfield_register.dart" />
         <option value="$PROJECT_DIR$/lib/shared/auth/auth_bloc.dart" />
-        <option value="$PROJECT_DIR$/lib/shared/auth/auth_repository.dart" />
         <option value="$PROJECT_DIR$/lib/shared/base_classes/custom_base_page.dart" />
         <option value="$PROJECT_DIR$/lib/shared/base_classes/custom_bloc_base.dart" />
         <option value="$PROJECT_DIR$/lib/shared/constants/text_styles.dart" />
         <option value="$PROJECT_DIR$/lib/shared/custom_dio/custom_dio.dart" />
-        <option value="$PROJECT_DIR$/lib/shared/custom_dio/interceptor_auth.dart" />
         <option value="$PROJECT_DIR$/lib/shared/flavors/flavor_values.dart" />
         <option value="$PROJECT_DIR$/lib/shared/helpers/storage_helper.dart" />
         <option value="$PROJECT_DIR$/lib/login/pages/login_page/login_page.dart" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/shared/webview.dart" />
-        <option value="$PROJECT_DIR$/lib/app_module.dart" />
-        <option value="$PROJECT_DIR$/lib/app_widget.dart" />
         <option value="$PROJECT_DIR$/lib/shared/widgets/radio_button_custom/radio_button_custom_bloc.dart" />
         <option value="$PROJECT_DIR$/lib/shared/widgets/radio_button_custom/radio_button_custom_widget.dart" />
         <option value="$PROJECT_DIR$/lib/shared/widgets/container_labels.dart" />
         <option value="$PROJECT_DIR$/lib/shared/widgets/custom_button_widget.dart" />
         <option value="$PROJECT_DIR$/lib/shared/models/user_object.dart" />
+        <option value="$PROJECT_DIR$/lib/app_widget.dart" />
+        <option value="$PROJECT_DIR$/lib/app_module.dart" />
+        <option value="$PROJECT_DIR$/lib/shared/custom_dio/interceptor_auth.dart" />
+        <option value="$PROJECT_DIR$/lib/shared/auth/auth_repository.dart" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2560" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1607" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -359,6 +226,27 @@
               <item name="login_component" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="login_component" type="b2602c69:ProjectViewProjectNode" />
+              <item name="login_component" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="login_component" type="b2602c69:ProjectViewProjectNode" />
+              <item name="login_component" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="custom_dio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="login_component" type="b2602c69:ProjectViewProjectNode" />
+              <item name="login_component" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="login_component" type="b2602c69:ProjectViewProjectNode" />
@@ -444,22 +332,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1607" height="1057" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.30142972" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.48498404" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="Resources Explorer" order="5" weight="0.32962668" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.38613862" />
+      <window_info anchor="bottom" id="Dart Analysis" order="0" visible="true" weight="0.4041451" />
       <window_info anchor="bottom" id="Run" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32970297" />
       <window_info anchor="bottom" id="Debug" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.32871288" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32871288" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32970297" />
@@ -549,9 +436,6 @@
           <caret line="5" column="14" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/app_bloc.dart">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/login/pages/email_card/email_card_bloc.dart">
       <provider selected="true" editor-type-id="text-editor">
@@ -708,16 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/shared/auth/auth_repository.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/shared/base_classes/custom_base_page.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -752,16 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
-          <folding>
-            <element signature="e#1#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/shared/custom_dio/interceptor_auth.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="38" />
           <folding>
             <element signature="e#1#31#0" expanded="true" />
           </folding>
@@ -840,39 +704,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/shared/webview.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="23" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/app_module.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/app_widget.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -923,12 +760,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/app_widget.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/shared/models/user_object.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="19" column="6" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="300">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="26" selection-start-line="26" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/app_module.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/app_bloc.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/shared/custom_dio/interceptor_auth.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="79" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/shared/auth/auth_repository.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="83" selection-start-line="10" selection-start-column="83" selection-end-line="10" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>

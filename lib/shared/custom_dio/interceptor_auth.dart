@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
 import 'package:login_component/shared/auth/auth_bloc.dart';
-import 'package:login_component/shared/flavors/flavor_values.dart';
 import 'package:login_component/shared/helpers/storage_helper.dart';
 import '../../app_module.dart';
 import 'custom_dio.dart';
@@ -22,7 +21,7 @@ class AuthInterceptors extends InterceptorsWrapper {
     CustomDio customDio = AppModule.to.getDependency<CustomDio>();
     RequestOptions options = error.response.request;
     Dio dio = Dio();
-    dio.options.baseUrl = FlavorConfig.instance.values.baseUrl;
+    dio.options.baseUrl = "http://ec2-54-81-242-73.compute-1.amazonaws.com:8080";
 
     switch (error.response?.statusCode) {
       case 401:

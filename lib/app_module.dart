@@ -18,8 +18,6 @@ class AppModule extends ModuleWidget {
   List<Bloc> get blocs => [
     Bloc((i) => AppBloc()),
     Bloc((i) => AuthBloc()),
-    Bloc((i) => LoginViewBloc()),
-    Bloc((i) => LoginPageBloc()),
   ];
 
   @override

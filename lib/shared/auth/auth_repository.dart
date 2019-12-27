@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
 import 'package:login_component/shared/custom_dio/custom_dio.dart';
-import 'package:login_component/shared/flavors/flavor_values.dart';
 import 'package:login_component/shared/helpers/storage_helper.dart';
 import 'package:login_component/shared/models/user_object.dart';
 
@@ -9,7 +8,7 @@ class AuthRepository {
 
   AuthRepository() {
     _client = CustomDio();
-    _client.options.baseUrl = FlavorConfig.instance.values.baseUrl;
+    _client.options.baseUrl = "http://ec2-54-81-242-73.compute-1.amazonaws.com:8080";
     _client.options.headers.addAll({"Content-Type": "application/json"});
   }
 
