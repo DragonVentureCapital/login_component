@@ -5,17 +5,18 @@ import 'full_modal_login.dart';
 import 'full_modal_login_bloc.dart';
 
 class FullModalLoginModule extends ModuleWidget {
-  @override
-  List<Bloc> get blocs => [
-    Bloc((i) => FullModalLoginBloc())
-  ];
+  final color;
+
+  FullModalLoginModule(this.color);
 
   @override
-  List<Dependency> get dependencies => [
-  ];
+  List<Bloc> get blocs => [Bloc((i) => FullModalLoginBloc())];
 
   @override
-  Widget get view => FullModalLoginPage();
+  List<Dependency> get dependencies => [];
+
+  @override
+  Widget get view => FullModalLoginPage(this.color);
 
   static Inject get to => Inject<FullModalLoginModule>.of();
 }

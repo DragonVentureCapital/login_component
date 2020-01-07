@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:login_component/shared/base_classes/custom_base_page.dart';
 import 'package:login_component/shared/constants/text_styles.dart';
+
 import '../login_view_module.dart';
 
-
 class FullModalLoginPage extends CustomBasePage {
-  final title;
   final color;
-  final baseUrl;
 
-  FullModalLoginPage({this.title, this.color, this.baseUrl});
+  FullModalLoginPage(this.color);
 
   @override
   _FullModalLoginPageState createState() => _FullModalLoginPageState();
